@@ -23,8 +23,7 @@ class Student
   end
 
   def self.all_students_in_grade_9
-    output = self.all.select? {|student| student.grade == 9}
-    output
+    self.all.select? {|student| student.grade == 9}
   end
 
   def self.find_by_name(name)
